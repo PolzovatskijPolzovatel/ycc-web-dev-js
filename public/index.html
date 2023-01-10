@@ -26,6 +26,8 @@
   let myBtn = document.getElementById('add-btn')
   myBtn.addEventListener('click', addItem)
 
+  document.addEventListener('keydown', entItem)
+
   function addItem(data) {
     let myInput = document.getElementById('do-it')
     let myList = document.getElementById('todo-list')
@@ -37,6 +39,10 @@
       myInput.value = '';
     }    
   }
+
+  function entItem(inp) {
+   if (event.key == 'Enter')
+       addItem()}
 
 </script>
 
