@@ -19,3 +19,13 @@ function entItem(inp) {
     if (inp.key == 'Enter')
         addItem()
 }
+
+function finishTask() {
+    let taskName = document.getElementById{'task-name'};
+    if(taskName.classList.contains('completed-item')) {
+        taskName.classList.remove('completed-item')
+    }
+    else {
+        taskName.classList.add('completed-item')
+    }
+}
